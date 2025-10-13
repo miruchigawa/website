@@ -4,7 +4,7 @@
     "title": "Nanakura",
     "description": "My personal website",
     "keywords": "Nanakura,Rust Developer,Go Developer,Anime Developer,Otaku Developer,Megumi Kato Husband",
-    "lang": "zh-CN",
+    "lang": "en-US",
     "favicon": "/favicon.ico",
     "appleTouchIcon": "/apple-touch-icon.png"
   },
@@ -141,9 +141,6 @@
   },
   "footer": {
     "startTime": "2024-04-14T00:00:00Z"
-  },
-  "waline": {
-    "serverURL": "https://waline.lxchapu.com"
   },
   "sponsor": {
     "wechat": "https://object.lxchapu.com/bed%2F2024%2F0507_6e3e8f73df2d4e6d.webp"

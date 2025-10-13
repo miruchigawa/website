@@ -22,7 +22,8 @@ export function Outdate({ lastMod }: { lastMod: Date }) {
           exit={{ opacity: 0 }}
         >
           <span>
-            This article was last modified on {getFormattedDate(lastMod)}. Some content may no longer be applicable. For inquiries, please contact the author.
+            This article was last modified on {getFormattedDate(lastMod)}. Some content may no
+            longer be applicable. For inquiries, please contact the author.
           </span>
         </motion.div>
       )}
