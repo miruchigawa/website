@@ -1,4 +1,4 @@
-import { sponsor, site } from '@/config.json'
+import { site } from '@/config.json'
 import { motion } from 'framer-motion'
 import * as QR from 'qrcode.react'
 import { useAtomValue } from 'jotai'
@@ -27,7 +27,7 @@ const shareList = [
     icon: 'icon-link',
     onClick: (data: ShareData) => {
       navigator.clipboard.writeText(data.url)
-      toast.success('URL Successfuly copied')
+      toast.success('URL Successfully copied')
     },
   },
 ]
@@ -51,7 +51,7 @@ function ShareButton() {
   const { present } = useModal()
 
   const url = new URL(postSlug, site.url).href
-  const text = `嘿，我发现了一片宝藏文章「${postTitle}」哩，快来看看吧！`
+  const text = `Hey, I stumbled upon this gem of an article “${postTitle}”. Come check it out!`
 
   const openModal = () => {
     present({
@@ -79,12 +79,12 @@ function ShareModal({ url, text }: { url: string; text: string }) {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.8 }}
     >
-      <h2 className="px-3 py-1 font-bold">分享此内容</h2>
+      <h2 className="px-3 py-1 font-bold">Share this content</h2>
       <hr className="my-2 border-primary" />
       <div className="px-3 py-2 grid grid-cols-[180px_auto] gap-3">
         <QR.QRCodeSVG value={url} size={180} />
         <div className="flex flex-col gap-2">
-          <div className="text-sm">分享到...</div>
+          <div className="text-sm">Share to....</div>
           <ul className="flex flex-col gap-2">
             {shareList.map((item) => (
               <li

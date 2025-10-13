@@ -1,6 +1,5 @@
 import { author, site } from '@/config.json'
 import { getFormattedDateTime } from '@/utils/date'
-import { AnimatedSignature } from '../AnimatedSignature'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 
@@ -43,8 +42,8 @@ export function PostCopyright({
       <p>Last Modified：{lastModStr}</p>
       <hr className="my-3 border-primary" />
       <div>
-        <div className="float-right ml-4 my-2">
-          <AnimatedSignature />
+        <div className="float-right ml-4 pointer-events-none">
+          <img className='size-[200px] lg:size-[150px] object-cover' src={author.avatar} alt='Author avatar' />
         </div>
         <p>
           For commercial reproduction, please contact the webmaster for authorization. For
