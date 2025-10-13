@@ -49,6 +49,9 @@ export default defineConfig({
     remarkRehype: { footnoteLabel: '参考', footnoteBackLabel: '返回正文' },
   },
   vite: {
+    server: {
+      allowedHosts: ['test.hanaworks.site'],
+    },
     build: {
       rollupOptions: {
         external: ['/pagefind/pagefind.js'],
