@@ -1,6 +1,7 @@
 ---
 title: Guide for Latte
 date: 2025-10-14T21:09:10.455Z
+lastMod: 2025-10-15T01:38:14.845Z
 category: 'Tutorial'
 tags: ['Go', 'WhatsApp', 'Bot', 'Open Source']
 comments: true
@@ -29,6 +30,11 @@ Also, please note, this project only implemented what I needed. For example, thi
 
 This project uses the Go programming language. Of course, you should have go installed. On other packages, like webp, libwebp, webpmux, and ffmpeg, so make sure all of them are already installed.
 
+Also, for third party APIs like Cobalt and Waifu2X APIs, you can run them yourself. All can be found here:
+
+- [Cobalt API](https://github.com/imputnet/cobalt/blob/main/docs/run-an-instance.md)
+- [Waifu2X API](https://github.com/nanakura/waifu2x-modal)
+
 ## How to run
 
 This project uses a pairing method and only that method is available for now, but of course, you can change that and implement other methods as you need.
@@ -37,6 +43,6 @@ Before you run, you should set up the required environment variables, like `PHON
 
 In development, I have already setup air for hot reloading so you don't need to kill and run by yourself, just type in `make dev` or `make watch`.
 
-## Your question doesn't already been answered yet?
+## Your question hasn't already been answered yet?
 
 If you have any questions, you can comment below and tell me your problem.
